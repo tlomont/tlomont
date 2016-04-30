@@ -1,0 +1,251 @@
+* {
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+html, body {
+    height:100%;
+}
+
+body {
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+#contact a {
+    margin: 0 1%;
+}
+
+.icon:hover > .fa {
+    transition: 300ms;
+    color: #617282;
+}
+
+.left-third:hover {
+    cursor: pointer;
+}
+
+#top-container > a {
+    text-decoration: none;
+}
+
+.left-third:hover > h2 > .fa {
+    animation: spin 0.25s linear;
+    -webkit-animation: spin 0.25s linear;
+}
+.middle-third:hover > h2 > .fa {
+    animation: spin 0.25s linear;
+    -webkit-animation: spin 0.25s linear;
+}
+.right-third:hover > h2 > .fa {
+    animation: spin 0.25s linear;
+    -webkit-animation: spin 0.25s linear;
+}
+
+#jumbo {
+    display: table;
+    width: 100%;
+    background: url("../img/virginia-tiny.jpg") no-repeat center center;
+    height: 100%;
+    background-size: cover;
+}
+#welcome {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#top-container {
+    background-color: #7291ad;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 3em;
+    overflow: hidden;
+}
+#middle-container {
+    background-color: #617282;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 3em;
+    overflow: hidden;
+}
+#contact {
+    display: table;
+    background-color: #B4C8DB;
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+}
+#icons {
+    display: table-cell;
+    vertical-align: middle;
+}
+#copyright {
+    display: table-row;
+    height: 3em;
+    font-size: 0.8em;
+}
+
+.left-third, .middle-third, .right-third {
+    border: 0.2em solid #ffffff;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.left-third {
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+}
+.right-third {
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+}
+.paragraph {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1.content {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    font-size: 2.5em;
+}
+
+h2.content {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#content404 {
+    background-color: #7291ad;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+a#content404 {
+    text-decoration: none;
+}
+
+#more-inside {
+    width: 80%;
+    margin: 0 auto 7% auto;
+    visibility: visible;
+    opacity: 1;
+    color: #36596D;
+}
+
+#more-inside > * {
+    color: #36596D;
+}
+
+.subtext > a {
+    color: #36596D;
+    font-size: smaller;
+    text-decoration: none;
+}
+
+#more-inside > p > a {
+    color: #36596D;
+}
+#more-inside > p > a:hover, .subtext > a:hover{
+    color: #45a4c2;
+}
+
+#more {
+    display: inline-block;
+    background-color: #D6E8F8;
+    width: 100%;
+}
+
+
+@media screen and (min-width: 300px) {
+    h1.content {
+        font-size: 4em;
+    }
+    h2 {
+        font-size: 1.4em;
+    }
+}
+
+@media screen and (min-width: 600px){
+    #jumbo {
+        background: url("../img/virginia-med.jpg") no-repeat center center fixed;
+        background-size: cover;
+    }
+    .left-third, .middle-third, .right-third {
+        width: 60%;
+    }
+    h1.content {
+        margin: 0;
+        font-size: 6em;
+    }
+}
+
+@media screen and (min-width: 1032px){
+    #jumbo {
+        background: url("../img/virginia-large.jpg") no-repeat center center fixed;
+        background-size: cover;
+    }
+    h1.content {
+        font-size: 8em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    .left-third {
+        width: 25%;
+        margin-left: 12.5%;
+        float: left;
+        height: 100%;
+        border-radius: 5% 0 0 5%;
+    }
+    .middle-third {
+        width: 25%;
+        float: left;
+    }
+    .right-third {
+        border-radius: 0 5% 5% 0;
+        width: 25%;
+        float: left;
+    }
+
+    #more {
+        display: block;
+        height: 0px;
+        color: white;
+        -moz-transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+
+    }
+    #more-inside > * {
+        position: relative;
+        top: -30px;
+    }
+
+    #more-inside {
+        visibility: hidden;
+        opacity: 0;
+        -moz-transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+    }
+    .arrow-up {
+        position: relative;
+        opacity: 1;
+        left: 16%;
+        width: 0;
+        height: 0;
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        border-bottom: 30px solid #D6E8F8;
+    }
+
+}

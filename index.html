@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TLomont | Welcome</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Personal page of student and developer Tommy Lomont" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+    <link rel = "stylesheet" type="text/css" href="css/index.css">
+    <link  rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="icon"
+          type="image/ico"
+          href="favicon.ico">
+</head>
+<body>
+<div id = "jumbo">
+    <div id = "welcome">
+        <h1 class = "content">Welcome</h1>
+        <h2 class = "content">I'm Tommy</h2>
+    </div>
+</div>
+<div id = "top-container">
+    <h1> What I Like </h1>
+    <div class = "left-third"  onclick="show()">
+        <h2>
+            <i class="fa fa-code fa-3x"></i><br>
+            Software Development
+        </h2>
+        <p> Frontend, Backend </p>
+    </div>
+    <a href='https://www.flickr.com/photos/60300206@N03/' target='Flickr'> 
+        <div class = "middle-third">
+            <h2>
+                <i class="fa fa-camera fa-3x"></i><br>
+                Photography & Design 
+            </h2>
+            <p> DSLR, iPhone </p>
+        </div>
+    </a>    
+    <div class = "right-third">
+        <h2>
+            <i class="fa fa-coffee fa-3x"></i><br>
+            Coffee & Tea
+        </h2>
+        <p> Chemex, Aeropress </p>        
+    </div>
+</div>
+<div id="more">
+    <div id="more-inside">
+        <div class="arrow-up"></div>
+        <h1 id="more-title">What I've Done</h1>
+        <p><a href="https://www.github.com/tlomont/NameThatStatus" target="nts">NameThatStatus</a> A fun guessing game using your friends' Facebook statuses </p>
+        <p><a href="http://crowdsoundapp.com" target="crowdsound">CrowdSound</a> Collaborative playlist app for iOS </p>
+        <p><a href="http://github.com/tlomont/NFLExperts" target="nflexperts">NFL Expert Predictions</a> Randomized weighted majority algorithm for NFL picks</p>
+        <i class="subtext"><a href="http://github.com/tlomont" target="git">See more on my GitHub</a></i>
+
+    </div>
+</div>
+<div id = "middle-container">
+    <h1> Who I Am </h1>
+    <div class="paragraph">
+        <p> I'm a junior at Princeton University studying Computer Science <br><br> Originally from Virginia</p>
+    </div>
+</div>
+
+<div id="contact">
+    <div id = "icons">
+        <a href="mailto:tlomont@princeton.edu" target="mail" class="icon"><i class="fa fa-envelope fa-3x"></i></a>
+        <a href="http://www.facebook.com/tlomont" target="fb" class="icon"><i class="fa fa-facebook fa-3x"></i></a>
+        <a href="http://www.twitter.com/tlomont" target="twitter" class="icon"><i class="fa fa-twitter fa-3x"></i></a>
+        <a href="http://www.github.com/tlomont" target="git" class="icon"><i class="fa fa-github fa-3x"></i></a>
+    </div>
+    <div id="copyright">
+        &copy; 2015 Tommy Lomont
+    </div>
+</div>
+
+<script>
+    function show() {
+        if (window.innerWidth > 920) {
+            var height = document.getElementById('more').style.height;
+            if (height == '') {
+                document.getElementById('more').style.height = "220px";
+                document.getElementById('more-inside').style.opacity = '1';
+                document.getElementById('more-inside').style.visibility = 'visible';
+            }
+            else {
+                document.getElementById('more').style.height = '';
+                document.getElementById('more-inside').style.opacity = '0';
+                document.getElementById('more-inside').style.visibility = 'hidden';
+            }
+        }
+    }
+</script>
+
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-24544490-1', 'tlomont.com');
+    ga('send', 'pageview');
+
+</script>
+
+</body>
+
+</html>
